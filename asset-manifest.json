@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9522ed8a.chunk.css",
+    "main.js": "/portfolio/static/js/main.ee312f64.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ee312f64.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.0007fcdd.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0007fcdd.js.map",
+    "static/js/2.f99a8b3b.chunk.js": "/portfolio/static/js/2.f99a8b3b.chunk.js",
+    "static/js/2.f99a8b3b.chunk.js.map": "/portfolio/static/js/2.f99a8b3b.chunk.js.map",
+    "static/js/3.8f920bb5.chunk.js": "/portfolio/static/js/3.8f920bb5.chunk.js",
+    "static/js/3.8f920bb5.chunk.js.map": "/portfolio/static/js/3.8f920bb5.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.9522ed8a.chunk.css.map": "/portfolio/static/css/main.9522ed8a.chunk.css.map",
+    "static/js/2.f99a8b3b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f99a8b3b.chunk.js.LICENSE.txt",
+    "static/media/astro-dodge.a9926f40.png": "/portfolio/static/media/astro-dodge.a9926f40.png",
+    "static/media/autobattler-ai-report.6680161d.pdf": "/portfolio/static/media/autobattler-ai-report.6680161d.pdf",
+    "static/media/autobattler-ai.a27089b1.png": "/portfolio/static/media/autobattler-ai.a27089b1.png",
+    "static/media/domino-simulator.9611c1fb.png": "/portfolio/static/media/domino-simulator.9611c1fb.png",
+    "static/media/down-arrow.709ca6ac.png": "/portfolio/static/media/down-arrow.709ca6ac.png",
+    "static/media/resume.1bd47549.pdf": "/portfolio/static/media/resume.1bd47549.pdf",
+    "static/media/ucla.3961ed18.jpg": "/portfolio/static/media/ucla.3961ed18.jpg",
+    "static/media/zenitsu-closed-eyes.cdda0936.png": "/portfolio/static/media/zenitsu-closed-eyes.cdda0936.png",
+    "static/media/zenitsu-open-eyes.541152af.png": "/portfolio/static/media/zenitsu-open-eyes.541152af.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0007fcdd.js",
+    "static/js/2.f99a8b3b.chunk.js",
+    "static/css/main.9522ed8a.chunk.css",
+    "static/js/main.ee312f64.chunk.js"
+  ]
+}
