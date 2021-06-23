@@ -192,7 +192,7 @@ const SectionHeader = (props) => {
     const globalRectCenterOffset = globalRectCenter - window.innerHeight / 2
 
     setScrollKeyFrames([globalRectCenterOffset - 1.3*(window.innerHeight / 2),
-      globalRectCenterOffset - 0.5*(window.innerHeight / 2),
+      globalRectCenterOffset - 0.6*(window.innerHeight / 2),
       globalRectCenterOffset + 0.9*(window.innerHeight / 2),
       globalRectCenterOffset + 1.2*(window.innerHeight / 2)])
   }
@@ -229,6 +229,7 @@ const Entry = (props) => {
       <NoteCard
         header={props.header}
         details={props.details}
+        tech={props.tech}
         buttons={props.buttons}
       />
     </div>
@@ -247,8 +248,8 @@ const EntryImage = (props) => {
     const globalRectCenterOffset = globalRectCenter - window.innerHeight / 2
 
     setScrollKeyFrames([globalRectCenterOffset - 1.3*(window.innerHeight / 2),
-      globalRectCenterOffset - 0.5*(window.innerHeight / 2),
-      globalRectCenterOffset + 0.9*(window.innerHeight / 2),
+      globalRectCenterOffset - 0.6*(window.innerHeight / 2),
+      globalRectCenterOffset + 1.0*(window.innerHeight / 2),
       globalRectCenterOffset + 1.2*(window.innerHeight / 2)])
   }
 
@@ -289,8 +290,8 @@ const NoteCard = (props) => {
     const globalRectCenterOffset = globalRectCenter - window.innerHeight / 2
 
     setScrollKeyFrames([globalRectCenterOffset - 1.3*(window.innerHeight / 2),
-      globalRectCenterOffset - 0.5*(window.innerHeight / 2),
-      globalRectCenterOffset + 0.9*(window.innerHeight / 2),
+      globalRectCenterOffset - 0.6*(window.innerHeight / 2),
+      globalRectCenterOffset + 1.0*(window.innerHeight / 2),
       globalRectCenterOffset + 1.2*(window.innerHeight / 2)])
   }
 
@@ -314,7 +315,12 @@ const NoteCard = (props) => {
   return (
     <div className='NoteCardWrapper' ref={ref}>
       <motion.div className='NoteCard' style={{ scale, opacity, x, y, rotateX, rotateY, boxShadow }}>
-        <NoteCardText header={props.header} details={props.details} buttons={props.buttons}/>
+        <NoteCardText
+          header={props.header}
+          details={props.details}
+          tech={props.tech}
+          buttons={props.buttons}
+        />
       </motion.div>
     </div>
   )

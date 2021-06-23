@@ -26,14 +26,14 @@
 
 .WelcomeScreen {
   width: 50%;
-  min-width: max(300px, 30vh);
+  min-width: max(400px, 30vh);
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: max(10px, 5%) max(30px, 5%);
+  gap: max(15px, 3vh) max(30px, 5%);
 }
 
 .WelcomeScreen .WelcomePhoto {
@@ -76,7 +76,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: max(10px, 5%) max(30px, 5%);
+  gap: max(10px, 2vh) max(30px, 5%);
 }
 
 .EntryImage {
@@ -90,7 +90,7 @@
 
 .SectionHeaderWrapper {
   width: 100%;
-  height: max(20px, 5vh);
+  height: max(40px, 5vh);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@
 
 .SectionHeader {
   width: 80%;
-  height: max(20px, 5vh);
+  height: max(40px, 5vh);
   background: #1e1e1e;
   display: flex;
   justify-content: center;
@@ -108,13 +108,13 @@
 }
 
 .NoteCardWrapper {
-  min-width: max(300px, 30vh);
+  min-width: max(350px, 30vh);
   flex: 1;
 }
 
 .NoteCard {
-  min-width: max(300px, 30vh);
-  padding: max(15px, 2vh);
+  min-width: max(350px, 30vh);
+  padding: max(15px, 2.5vh);
   flex: 1;
   border-radius: 25px;
   background: #1e1e1e;
@@ -124,7 +124,7 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-  gap: max(15px, 5%);
+  gap: max(15px, 2vh);
 }
 
 .NoteCardHeader {
@@ -156,7 +156,7 @@
 
 .Footer {
   width: 100%;
-  height: max(40px, 10vh);
+  height: max(60px, 10vh);
   background: #1e1e1e;
   display: flex;
   justify-content: center;
