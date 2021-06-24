@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Balsamiq+Sans&family=Caveat:wght@500&family=Red+Hat+Display:wght@700&family=Rock+Salt&display=swap');
 
-body {
-   min-width: 640px;
-   width: auto !important;
-   width: 640px;
+* {
+  box-sizing: border-box;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   font-family: 'Baloo 2', cursive;
+  font-size: large;
 }
 
 .Background {
@@ -40,6 +40,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: max(15px, 3vh) max(30px, 5%);
+  margin: max(15px, 5vh);
 }
 
 .WelcomeScreen .WelcomePhoto {
@@ -50,9 +51,14 @@ body {
   object-fit: cover;
   border-radius: 50%;
   flex: 1;
+  box-shadow: -10px 20px 20px #141414;
 }
 
-.WelcomeScreen .DownArrow {
+.WelcomeScreen .NoteCard {
+  box-shadow: -10px 20px 20px #141414;
+}
+
+/*.WelcomeScreen .DownArrow {
   min-width: max(20px, 5vh);
   min-height: max(20px, 5vh);
   max-width: 5vh;
@@ -61,7 +67,7 @@ body {
   position: absolute;
   bottom: 0px;
   cursor: pointer;
-}
+}*/
 
 .Section {
   width: 100%;
@@ -158,6 +164,7 @@ body {
   background: #1e1e1e;
   text-decoration: underline;
   font-family: 'Rock Salt', cursive;
+  font-size: 70%;
 }
 
 .Footer {
@@ -167,4 +174,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+@media screen and (min-resolution: 100dpi) {
+  .App {
+    font-size: 200%;
+  }
 }

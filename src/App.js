@@ -95,7 +95,6 @@ const WelcomeScreen = () => {
       <div className='WelcomeScreen'>
         <WelcomeScreenPhoto/>
         <WelcomeScreenNoteCard/>
-        <WelcomeScreenDownArrow/>
       </div>
     </motion.div>
   );
@@ -121,7 +120,7 @@ const WelcomeScreenPhoto = () => {
       onMouseOver={e => e.currentTarget.src = appdata.welcome.imageHover}
       onMouseOut={e => e.currentTarget.src = appdata.welcome.image}
       alt='welcome'
-      variants={variants}
+      // variants={variants}
     />
   );
 }
@@ -140,35 +139,38 @@ const WelcomeScreenNoteCard = () => {
   }
 
   return (
-    <motion.div className='NoteCard' variants={variants}>
+    <motion.div
+      className='NoteCard'
+      // variants={variants}
+    >
       <NoteCardText header={appdata.welcome.header} details={appdata.welcome.details} buttons={appdata.welcome.buttons}/>
     </motion.div>
   );
 }
 
-const WelcomeScreenDownArrow = () => {
-  const variants = {
-    atTop: {
-      opacity: [1, 0],
-      transition : {
-        repeat: Infinity,
-        repeatType: "reverse",
-        duration: .5
-      }
-    },
-    notAtTop: { opacity: 0 },
-  }
+// const WelcomeScreenDownArrow = () => {
+//   const variants = {
+//     atTop: {
+//       opacity: [1, 0],
+//       transition : {
+//         repeat: Infinity,
+//         repeatType: "reverse",
+//         duration: .5
+//       }
+//     },
+//     notAtTop: { opacity: 0 },
+//   }
 
-  return (
-    <motion.img
-      className='DownArrow'
-      src={appdata.welcome.downArrowImage}
-      alt='down-arrow'
-      variants={variants}
-      onClick={() => document.getElementById('workSection').scrollIntoView({ behavior: 'smooth', block: 'start' })}
-    />
-  );
-}
+//   return (
+//     <motion.img
+//       className='DownArrow'
+//       src={appdata.welcome.downArrowImage}
+//       alt='down-arrow'
+//       variants={variants}
+//       onClick={() => document.getElementById('workSection').scrollIntoView({ behavior: 'smooth', block: 'start' })}
+//     />
+//   );
+// }
 
 const Section = (props) => {
   let subsections = []
@@ -280,16 +282,14 @@ const EntryImage = (props) => {
   const scale = useTransform(scrollY, scrollKeyFrames, [0.5, 1, 1, 1])
   const x = useTransform(scrollY, scrollKeyFrames, [-200, 0, 0, 0])
   const y = useTransform(scrollY, scrollKeyFrames, [200, 0, 0, 0])
-  const rotateX = useTransform(scrollY, scrollKeyFrames, [90, 0, 0, 0])
   const opacity = useTransform(scrollY, scrollKeyFrames, [0, 1, 1, 0])
-  const rotateY = useTransform(scrollY, scrollKeyFrames, [90, 0, 0, 0])
   const borderRadius = useTransform(scrollY, scrollKeyFrames, ['100%', '10%', '10%', '10%'])
   const boxShadow = useTransform(scrollY, scrollKeyFrames,
     ['-10px 20px 20px #141414', '-10px 20px 20px #141414', '-10px 20px 20px #141414', '0px 10px 10px #141414'])
 
   return (
     <div ref={ref}>
-      <motion.img className='EntryImage' src={props.src} style={{ scale, opacity, x, y, rotateY, rotateX, borderRadius, boxShadow }}/>
+      <motion.img className='EntryImage' src={props.src} style={{ scale, opacity, x, y, borderRadius, boxShadow }}/>
     </div>
   );
 }
@@ -324,15 +324,13 @@ const NoteCard = (props) => {
   const scale = useTransform(scrollY, scrollKeyFrames, [1, 1, 1, 1])
   const x = useTransform(scrollY, scrollKeyFrames, [200, 0, 0, 0])
   const y = useTransform(scrollY, scrollKeyFrames, [200, 0, 0, 0])
-  const rotateX = useTransform(scrollY, scrollKeyFrames, [90, 0, 0, 0])
-  const rotateY = useTransform(scrollY, scrollKeyFrames, [-20, 0, 0, 0])
   const opacity = useTransform(scrollY, scrollKeyFrames, [0, 1, 1, 0])
   const boxShadow = useTransform(scrollY, scrollKeyFrames,
     ['-10px 20px 20px #141414', '-10px 20px 20px #141414', '-10px 20px 20px #141414', '0px 10px 10px #141414'])
 
   return (
     <div className='NoteCardWrapper' ref={ref}>
-      <motion.div className='NoteCard' style={{ scale, opacity, x, y, rotateX, rotateY, boxShadow }}>
+      <motion.div className='NoteCard' style={{ scale, opacity, x, y, boxShadow }}>
         <NoteCardText
           header={props.header}
           details={props.details}
