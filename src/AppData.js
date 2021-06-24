@@ -47,7 +47,7 @@ export const appdata = {
 	'resume': resume,
 	'welcome': {
 		'header': 'Welcome!',
-		'details': 'I\'m Brandon. This is my personal website where I post my career-related information and also some projects. Ultimately looking to do front-end work or game development as a full-time career.',
+		'details': 'I\'m Brandon. This is my personal website where I post career-related information and also some projects. Ultimately looking to do front-end work or game development as a full-time career.',
 		'image': welcomeImage,
 		'imageHover': welcomeImageHover,
 		'downArrowImage': downArrowImage,
