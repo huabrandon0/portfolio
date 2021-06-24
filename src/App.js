@@ -5,6 +5,16 @@ import Particles from 'react-particles-js'
 import { appdata } from './AppData.js'
 
 const App = () => {
+  const [, updateState] = React.useState();
+  const forceUpdate = React.useCallback(() => updateState({}), []);
+
+  useEffect(() => {
+    window.addEventListener('resize', forceUpdate)
+    return () => {
+      window.removeEventListener('resize', forceUpdate)
+    }
+  })
+
   return (
     <div>
       <div className='App'>
@@ -67,9 +77,11 @@ const WelcomeScreen = () => {
   };
 
   useEffect(() => {
+    window.addEventListener('resize', handleScroll, { passive: true });
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => {
         window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('resize', handleScroll);
     };
   }, []);
 
@@ -199,8 +211,10 @@ const SectionHeader = (props) => {
 
   useEffect(() => {
     window.addEventListener('load', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
     return () => {
         window.removeEventListener('load', handleScroll);
+        window.removeEventListener('resize', handleScroll);
     };
   }, []);
 
@@ -255,8 +269,10 @@ const EntryImage = (props) => {
 
   useEffect(() => {
     window.addEventListener('load', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
     return () => {
         window.removeEventListener('load', handleScroll);
+        window.removeEventListener('resize', handleScroll);
     };
   }, []);
 
@@ -297,8 +313,10 @@ const NoteCard = (props) => {
 
   useEffect(() => {
     window.addEventListener('load', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
     return () => {
         window.removeEventListener('load', handleScroll);
+        window.removeEventListener('resize', handleScroll);
     };
   }, []);
 

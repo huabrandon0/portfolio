@@ -114,7 +114,7 @@ body {
 }
 
 .NoteCardWrapper {
-  min-width: max(350px, 30vh);
+  min-width: max(300px, 30vh);
   flex: 1;
 }
 
