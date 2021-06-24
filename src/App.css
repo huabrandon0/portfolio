@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Balsamiq+Sans&family=Caveat:wght@500&family=Red+Hat+Display:wght@700&family=Rock+Salt&display=swap');
 
+body {
+   min-width: 640px;
+   width: auto !important;
+   width: 640px;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -113,7 +119,7 @@
 }
 
 .NoteCard {
-  min-width: max(350px, 30vh);
+  min-width: max(300px, 30vh);
   padding: max(15px, 2.5vh);
   flex: 1;
   border-radius: 25px;
