@@ -177,7 +177,11 @@
   align-items: center;
 }
 
-@media screen and (min-resolution: 100dpi) {
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 1000px)
+  and (orientation: portrait)
+  and (min-resolution: 96dpi) {
   .App {
     font-size: 200%;
   }
