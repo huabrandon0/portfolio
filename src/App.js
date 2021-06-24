@@ -202,13 +202,14 @@ const SectionHeader = (props) => {
     const scrollTop = window.pageYOffset
     const rect = ref.current.getBoundingClientRect()
     const globalRectTop = rect.top + scrollTop
-    const globalRectCenter = globalRectTop + rect.height / 2
-    const globalRectCenterOffset = globalRectCenter - window.innerHeight / 2
+    const globalRectBottom = globalRectTop + rect.height
+    const globalRectTopOffset = globalRectTop - window.innerHeight / 2
+    const globalRectBottomOffset = globalRectBottom - window.innerHeight / 2
 
-    setScrollKeyFrames([globalRectCenterOffset - 1.3*(window.innerHeight / 2),
-      globalRectCenterOffset - 0.6*(window.innerHeight / 2),
-      globalRectCenterOffset + 0.9*(window.innerHeight / 2),
-      globalRectCenterOffset + 1.2*(window.innerHeight / 2)])
+    setScrollKeyFrames([globalRectTopOffset - 0.5*window.innerHeight,
+      globalRectTopOffset - 0.2*window.innerHeight,
+      globalRectBottomOffset + 0.4*window.innerHeight,
+      globalRectBottomOffset + 0.5*window.innerHeight])
   }
 
   useEffect(() => {
@@ -260,13 +261,14 @@ const EntryImage = (props) => {
     const scrollTop = window.pageYOffset
     const rect = ref.current.getBoundingClientRect()
     const globalRectTop = rect.top + scrollTop
-    const globalRectCenter = globalRectTop + rect.height / 2
-    const globalRectCenterOffset = globalRectCenter - window.innerHeight / 2
+    const globalRectBottom = globalRectTop + rect.height
+    const globalRectTopOffset = globalRectTop - window.innerHeight / 2
+    const globalRectBottomOffset = globalRectBottom - window.innerHeight / 2
 
-    setScrollKeyFrames([globalRectCenterOffset - 1.3*(window.innerHeight / 2),
-      globalRectCenterOffset - 0.6*(window.innerHeight / 2),
-      globalRectCenterOffset + 1.0*(window.innerHeight / 2),
-      globalRectCenterOffset + 1.2*(window.innerHeight / 2)])
+    setScrollKeyFrames([globalRectTopOffset - 0.5*window.innerHeight,
+      globalRectTopOffset - 0.2*window.innerHeight,
+      globalRectBottomOffset + 0.4*window.innerHeight,
+      globalRectBottomOffset + 0.5*window.innerHeight])
   }
 
   useEffect(() => {
@@ -302,13 +304,14 @@ const NoteCard = (props) => {
     const scrollTop = window.pageYOffset
     const rect = ref.current.getBoundingClientRect()
     const globalRectTop = rect.top + scrollTop
-    const globalRectCenter = globalRectTop + rect.height / 2
-    const globalRectCenterOffset = globalRectCenter - window.innerHeight / 2
+    const globalRectBottom = globalRectTop + rect.height
+    const globalRectTopOffset = globalRectTop - window.innerHeight / 2
+    const globalRectBottomOffset = globalRectBottom - window.innerHeight / 2
 
-    setScrollKeyFrames([globalRectCenterOffset - 1.3*(window.innerHeight / 2),
-      globalRectCenterOffset - 0.6*(window.innerHeight / 2),
-      globalRectCenterOffset + 1.0*(window.innerHeight / 2),
-      globalRectCenterOffset + 1.2*(window.innerHeight / 2)])
+    setScrollKeyFrames([globalRectTopOffset - 0.5*window.innerHeight,
+      globalRectTopOffset - 0.2*window.innerHeight,
+      globalRectBottomOffset + 0.4*window.innerHeight,
+      globalRectBottomOffset + 0.5*window.innerHeight])
   }
 
   useEffect(() => {
