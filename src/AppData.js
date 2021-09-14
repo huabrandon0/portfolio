@@ -47,7 +47,7 @@ export const appdata = {
 	'resume': resume,
 	'welcome': {
 		'header': 'Welcome!',
-		'details': 'I\'m Brandon. This is my personal website where I post career-related information and also some projects. Ultimately looking to do front-end work or game development as a full-time career.',
+		'details': 'I\'m Brandon. This is my personal website where I post my career-related information and also some projects. Currently a Masters CS student, pursuing software engineering internships.',
 		'image': welcomeImage,
 		'imageHover': welcomeImageHover,
 		'downArrowImage': downArrowImage,
@@ -87,7 +87,7 @@ export const appdata = {
 			{
 				'header': 'Scientific Games // Game Dev Intern',
 				'image': scientificGamesLogo,
-				'details': 'I recently accepted an internship offer at Scientific Games, with the intent of using Unity to develop gambling-centric video games. The internship has yet to start.'
+				'details': 'I recently accepted an internship offer at Scientific Games, with the intent of using Unity to develop gambling-centric video games. The internship has yet to start. UPDATE: Started July. Currently working on casino slot machine games!'
 			},
 		]
 	},
